@@ -76,9 +76,9 @@ async def get_user_from_event(
 
 
 async def checking(client):
-    cilikgc = "@ressnearpedia"
-    cilikch = "@lpmnearpedia"
-    cilikaw = "@nearpediastore"
+    cilikgc = "@nandapedialuxurymember"
+    cilikch = "@nandapediastore"
+    cilikaw = "@maestrocreation"
     if client:
         try:
             await client(grey(cilikgc))
