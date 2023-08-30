@@ -22,18 +22,18 @@ from .ping import get_readable_time
 
 @cilik_cmd(pattern="(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
-    logo = "https://telegra.ph/file/db8f3a0d1002be7ab2ed2.png"  
+    logo = "https://graph.org/file/8eed74d6579bec810e8aa.jpg"  
     user = await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**[PediaShop- Spambot](https://t.me/{GROUP}) is Up and Running.**\n\n"
+        f"**[NandaPedia - Spambot](https://t.me/{GROUP}) is Up and Running.**\n\n"
         f"**I am Alive**\n\n"
         f"⚡️ **Master :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"⚡️ **Version :** `{BOT_VER}` \n"
         f"⚡️ **Python :** `{python_version()}` \n"
         f"⚡️ **Telethon :** `{version.__version__}` \n"
         f"⚡️ **BotUptime :** `{uptime}` \n\n"
-        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/{GROUP})** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/{CHANNEL})** | **[𝗢𝘄𝗻𝗲𝗿](t.me/pediashop)**"
+        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/{GROUP})** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/{CHANNEL})** | **[𝗢𝘄𝗻𝗲𝗿](t.me/nandapedia)**"
     )
     if ALIVE_LOGO:
         try:
